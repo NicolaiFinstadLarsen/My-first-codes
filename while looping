@@ -4,6 +4,7 @@ list(enumerate(fruits))
 #while looping 
 
 start_nubmer = 0
+start_number += 1
 
 for x in fruits:
   if x == "apple":
@@ -11,4 +12,4 @@ for x in fruits:
 while x != "apple":
   print("suck")
   
-start_number += 1
+
