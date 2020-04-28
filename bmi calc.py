@@ -12,7 +12,7 @@ def bmi_calc():
         if name != "Stop":
             height = float(input("What is your height in meters? "))
             weight = float(input("What is your weight in kg? "))
-            bmi = weight / (height**2)
+            bmi = round(weight / (height**2),2)
             print(name+"'s", "Bmi is: ", bmi)
             if 18.5>bmi:
                 print(bmi, "is underweight")
