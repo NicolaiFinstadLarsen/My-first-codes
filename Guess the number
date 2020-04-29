@@ -1,0 +1,19 @@
+# guess the number 
+import random 
+n = int(input("Start: "))
+m = int(input("Stop: "))
+x = random.randrange(n,m)
+print(x)
+ans = int(input("What is your guess? "))
+
+while ans != x:
+  if x<ans:
+    print("To high")
+    x = int(input("Try again: "))
+  elif x>ans:
+    print("To low")
+    x = (int(input("Try again: ")))
+  break
+  
+if x == ans:
+  print("Wow, amazing!")
