@@ -3,23 +3,27 @@
 
 import random 
 
-print("I want you to guess the number between a start and a stop point. Keep going.")
+print("I want you to guess the number between a start and a stop point. Keep going. To stop write 00.1")
 
 n = int(input("Start: "))
 m = int(input("Stop: "))
 x = random.randrange(n,m)
 #print(x)
-ans = int(input("What is your guess? "))
+ans = float(input("What is your guess? "))
 
 while ans != x:
   #print(x)
-  if x<ans:
+  if ans == 00.1:
+    print("Hate to see you out chicken out like that..")
+    break
+  elif x<ans:
     print("To high")
-    ans = int(input("Try again: "))
+    ans = float(input("Try again: "))
     continue
   elif x>ans:
     print("To low")
-    ans = (int(input("Try again: "))) 
+    ans = float(input("Try again: ")) 
     continue
+
 if x == ans:
   print("Wow, amazing!")
