@@ -1,19 +1,25 @@
 # guess the number 
+
+
 import random 
+
+print("I want you to guess the number between a start and a stop point. Keep going.")
+
 n = int(input("Start: "))
 m = int(input("Stop: "))
 x = random.randrange(n,m)
-print(x)
+#print(x)
 ans = int(input("What is your guess? "))
 
 while ans != x:
+  #print(x)
   if x<ans:
     print("To high")
-    x = int(input("Try again: "))
+    ans = int(input("Try again: "))
+    continue
   elif x>ans:
     print("To low")
-    x = (int(input("Try again: ")))
-  break
-  
+    ans = (int(input("Try again: "))) 
+    continue
 if x == ans:
   print("Wow, amazing!")
