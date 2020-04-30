@@ -3,7 +3,7 @@
 
 import random 
 
-print("I want you to guess the number between a start and a stop point. Keep going. To stop write 00.1")
+print(" \nI want you to guess the number between a start and a stop point. \nKeep going! \nTo stop write 00.1")
 
 n = int(input("Start: "))
 m = int(input("Stop: "))
