@@ -1,3 +1,6 @@
+import random
+import time
+
 n = input("Do you want to roll a dice? Yes or No: ")
 while n == "Yes":
   if n =="Yes":
@@ -14,3 +17,5 @@ while n == "Yes":
   if n == "No":
     print("Thanks for playing")
     break
+
+time.sleep(5)
